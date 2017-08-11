@@ -76,7 +76,7 @@ public class ChooseAreaFragment extends Fragment {
                     String weatherId = countyList.get(position).getWeatherId();
                     if (getActivity()instanceof MainActivity) {
                         Intent intent = new Intent(getActivity(), WeatherActivity.class);
-                        intent.putExtra("weather_id", weatherId);
+                        intent.putExtra("weather_id", weatherId);//修改编辑
                         startActivity(intent);
                         getActivity().finish();
                     }else if (getActivity() instanceof WeatherActivity){

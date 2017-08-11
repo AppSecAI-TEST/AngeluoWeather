@@ -142,7 +142,7 @@ public class WeatherActivity extends AppCompatActivity {
                     @Override
                     public void run() {
                         Toast.makeText(WeatherActivity.this,"获取天气信息失败",Toast.LENGTH_SHORT).show();
-                        swipeRefresh.setRefreshing(false);
+                        swipeRefresh.setRefreshing(false);//测试123
                     }
                 });
             }
